@@ -1,0 +1,204 @@
+<div class="home-page">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-gradient-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-label">GOLDEN HORIZON HOTEL</p>
+      <h1 class="hero-title" #typingElement></h1>
+      <p class="hero-subtitle">Book your stay today and experience true hospitality.</p>
+      <div class="hero-actions">
+        <button matFab extended class="fw-bold btn-book" color="accent" routerLink="/login">
+          <mat-icon>hotel</mat-icon>
+          Book Now
+        </button>
+        <button mat-stroked-button class="btn-explore" routerLink="/rooms">
+          <mat-icon>explore</mat-icon>
+          Explore Rooms
+        </button>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ===== QUICK BOOKING BAR ===== -->
+  <section class="booking-bar-section">
+    <div class="container">
+      <div class="booking-card">
+        <div class="booking-field">
+          <label><i class="bi bi-calendar-check"></i> Check In</label>
+          <input type="date" class="form-control" />
+        </div>
+        <div class="booking-divider"></div>
+        <div class="booking-field">
+          <label><i class="bi bi-calendar-x"></i> Check Out</label>
+          <input type="date" class="form-control" />
+        </div>
+        <div class="booking-divider"></div>
+        <div class="booking-field">
+          <label><i class="bi bi-people"></i> Guests</label>
+          <select class="form-select">
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4+ Guests</option>
+          </select>
+        </div>
+        <button mat-flat-button class="booking-search-btn" color="accent" routerLink="/login">
+          <mat-icon>search</mat-icon>
+          Search
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">OUR AMENITIES</span>
+        <h2>Everything You Need for a Perfect Stay</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-3 col-sm-6">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-droplet-half"></i></div>
+            <h4>Swimming Pool</h4>
+            <p>Dive into our heated outdoor pool with breathtaking panoramic views.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-wind"></i></div>
+            <h4>Luxury Spa</h4>
+            <p>Relax and rejuvenate at our award-winning wellness and spa center.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-cup-hot"></i></div>
+            <h4>Fine Dining</h4>
+            <p>Savour world-class cuisine crafted daily by our master chefs.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-wifi"></i></div>
+            <h4>Free Wi-Fi</h4>
+            <p>Stay connected with high-speed internet access throughout the hotel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <h2 class="stat-number">15+</h2>
+            <p class="stat-label">Years of Excellence</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <h2 class="stat-number">50K+</h2>
+            <p class="stat-label">Happy Guests</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <h2 class="stat-number">80+</h2>
+            <p class="stat-label">Luxury Rooms</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <h2 class="stat-number">25+</h2>
+            <p class="stat-label">Awards Won</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">GUEST REVIEWS</span>
+        <h2>What Our Guests Say</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="review">"An absolutely magical experience. The rooms are stunning and the staff made us feel like royalty from the moment we arrived."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">S</div>
+              <div>
+                <strong>Sarah Mitchell</strong>
+                <span>New York, USA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card featured">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="review">"The spa and dining experience were beyond our expectations. We will definitely return — Golden Horizon is our new favourite!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">J</div>
+              <div>
+                <strong>James Olivier</strong>
+                <span>London, UK</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="review">"World-class service, breathtaking views, and incredible food. Everything was perfect. Highly recommend for a luxury getaway."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">A</div>
+              <div>
+                <strong>Amira Hassan</strong>
+                <span>Dubai, UAE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="cta-section">
+    <div class="container cta-content">
+      <h2>Ready for an Unforgettable Experience?</h2>
+      <p>Reserve your room now and unlock exclusive early-bird offers.</p>
+      <button matFab extended class="fw-bold" color="accent" routerLink="/login">
+        <mat-icon>hotel</mat-icon>
+        Reserve Your Room
+      </button>
+    </div>
+  </section>
+
+</div>
