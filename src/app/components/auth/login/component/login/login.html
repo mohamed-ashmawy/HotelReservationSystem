@@ -1,1 +1,60 @@
-<p>login works!</p>
+<section class="login">
+  <div class="row g-0">
+    <div class="col-md-8 d-flex align-items-center justify-content-center position-relative">
+      <div class="back position-absolute top-0 start-0 p-3">
+        <button matFab extended class="fw-bold" color="accent" routerLink="/home">
+        <mat-icon>arrow_back</mat-icon>
+        Back
+      </button>
+      </div>
+      <div class="content">
+        <h1 class="fw-bolder text-uppercase">Login</h1>
+        <p class="subtitle">Sign in to access your hotel reservation account</p>
+        <form [formGroup]="loginForm">
+          <div class="mb-3">
+            <!-- <label for="userName" class="form-label">Username</label> -->
+            <input
+              type="text"
+              class="form-control"
+              id="userName"
+              formControlName="userName"
+              placeholder="Enter your username"
+            />
+            <div class="text-danger fs-6 fw-lighter">
+              <span *ngIf="loginForm.get('userName')?.hasError('required') && loginForm.get('userName')?.touched">
+                Username is required
+              </span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <!-- <label for="password" class="form-label">Password</label> -->
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              formControlName="password"
+              placeholder="Enter your password"
+            />
+            <div class="text-danger fs-6 fw-lighter">
+              <span *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched">
+                Password is required
+              </span>
+              <span *ngIf="loginForm.get('password')?.hasError('pattern') && loginForm.get('password')?.touched">
+                Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character
+              </span>
+            </div>
+
+          </div>
+          <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid" routerLink="/rooms">Login</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="motion-bg">
+        <video autoplay muted loop id="myVideo">
+          <source src="/background/login.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
