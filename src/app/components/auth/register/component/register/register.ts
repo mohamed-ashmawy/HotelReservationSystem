@@ -35,6 +35,10 @@ export class Register implements OnInit {
       this.registerForm.markAllAsTouched();
       return;
     }
+    if(this.registerForm.value.password !== this.registerForm.value.confirmPassword){
+      alert('Confirm Password do\'t Match Password');
+      return;
+    }
 
     const { userName, email, password } = this.registerForm.value;
     localStorage.setItem('token', 'dummy-token');
