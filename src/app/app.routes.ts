@@ -5,6 +5,7 @@ import { Gallery } from './components/gallery/component/gallery/gallery';
 import { About } from './components/about/component/about/about';
 import { Login } from './components/auth/login/component/login/login';
 import { authGuard } from './core/guards/auth-guard';
+import { Register } from './components/auth/register/component/register/register';
 
 export const routes: Routes = [
   {path: '',redirectTo:'home',pathMatch:'full'},
@@ -13,4 +14,5 @@ export const routes: Routes = [
   {path: 'gallery',component:Gallery},
   {path: 'about',component:About},
   {path:'login',component:Login},
+  {path:'register',component:Register}
 ];

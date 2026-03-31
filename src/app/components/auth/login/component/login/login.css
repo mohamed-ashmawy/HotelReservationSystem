@@ -14,19 +14,19 @@
   gap: 0 !important;
 }
 
-.login .col-md-8 {
+.login .col-md-6 {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   padding: 0;
-  flex: 0 0 66.66%;
+  flex: 0 0 50%;
   background: #f8f9fa;
 }
 
-.login .col-md-4 {
+.login .col-md-6:last-child {
   padding: 0;
-  flex: 0 0 33.34%;
+  flex: 0 0 50%;
 }
 
 .back {

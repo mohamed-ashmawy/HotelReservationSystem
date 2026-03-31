@@ -20,7 +20,7 @@ export class App {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe((event: any) => {
-        this.isLoginPage.set(event.urlAfterRedirects.includes('login'));
+        this.isLoginPage.set(event.urlAfterRedirects.includes('login') || event.urlAfterRedirects.includes('register'));
       });
   }
 }

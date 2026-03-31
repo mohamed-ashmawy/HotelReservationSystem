@@ -1,0 +1,168 @@
+.register {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  background: #fff;
+}
+
+.register .row {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  gap: 0 !important;
+}
+
+.register .col-md-8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+  flex: 0 0 66.66%;
+  background: #f8f9fa;
+}
+
+.register .col-md-4 {
+  padding: 0;
+  flex: 0 0 33.34%;
+}
+
+.back {
+  z-index: 10;
+}
+
+.back mat-icon {
+  cursor: pointer;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+.back mat-icon:hover {
+  color: #007bff;
+}
+
+.content {
+  padding: 40px 60px;
+  max-width: 450px;
+}
+
+.content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+.content .subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.content form {
+  width: 100%;
+}
+
+.content .form-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.content .form-control {
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 12px 16px;
+  font-size: 14px;
+  height: auto;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.content .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  outline: none;
+}
+
+.content .btn {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  background: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.content .btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.content .btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.content p {
+  font-size: 14px;
+  color: #666;
+}
+
+.content p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.content p a:hover {
+  text-decoration: underline;
+}
+
+.motion-bg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.motion-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .register .col-md-8 {
+    flex: 0 0 100%;
+  }
+
+  .register .col-md-4 {
+    display: none;
+  }
+
+  .content {
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+
+  .content h1 {
+    font-size: 24px;
+  }
+}
