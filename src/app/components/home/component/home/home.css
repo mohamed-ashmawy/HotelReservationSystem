@@ -17,12 +17,12 @@
   text-align: center;
 }
 
-.hero-gradient-overlay {
+/* .hero-gradient-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.5));
   pointer-events: none;
-}
+} */
 
 .hero-content {
   position: relative;
