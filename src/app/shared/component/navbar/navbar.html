@@ -21,9 +21,13 @@
           <a class="nav-link" aria-current="page" routerLink="/about" routerLinkActive="active-link" >About</a>
         </li>
       </ul>
+      <ul class="navbar-nav d-flex justify-content-end align-items-lg-end me-3"*ngIf="isLoggedIn">
+        <mat-icon class="mx-1 bg-danger text-light rounded-circle text-center fs-5">person</mat-icon>
+        <a>{{ userName }}</a>
+      </ul>
       <ul class="navbar-nav d-flex justify-content-end align-items-lg-end">
-        <section class="d-flex align-items-center">
-          <mat-button-toggle-group name="lang" aria-label="language" class="me-3">
+        <section class="d-flex align-items-center me-2">
+          <mat-button-toggle-group name="lang" aria-label="Font Style">
             <mat-button-toggle value="en">EN</mat-button-toggle>
             <mat-button-toggle value="ar">Ar</mat-button-toggle>
           </mat-button-toggle-group>
@@ -31,6 +35,9 @@
         <button matFab extended class="fw-bold" color="accent" routerLink="/login">
         Booking Now
       </button>
+      <div class="flex">
+        <a class="nav-link" *ngIf="isLoggedIn" aria-current="page" (click)="logOut()">log out</a>
+      </div>
       </ul>
     </div>
   </div>

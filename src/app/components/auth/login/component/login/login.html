@@ -3,9 +3,9 @@
     <div class="col-md-8 d-flex align-items-center justify-content-center position-relative">
       <div class="back position-absolute top-0 start-0 p-3">
         <button matFab extended class="fw-bold" color="accent" routerLink="/home">
-        <mat-icon>arrow_back</mat-icon>
-        Back
-      </button>
+          <mat-icon>arrow_back</mat-icon>
+          Back
+        </button>
       </div>
       <div class="content">
         <h1 class="fw-bolder text-uppercase">Login</h1>
@@ -21,7 +21,12 @@
               placeholder="Enter your username"
             />
             <div class="text-danger fs-6 fw-lighter">
-              <span *ngIf="loginForm.get('userName')?.hasError('required') && loginForm.get('userName')?.touched">
+              <span
+                *ngIf="
+                  loginForm.get('userName')?.hasError('required') &&
+                  loginForm.get('userName')?.touched
+                "
+              >
                 Username is required
               </span>
             </div>
@@ -36,16 +41,28 @@
               placeholder="Enter your password"
             />
             <div class="text-danger fs-6 fw-lighter">
-              <span *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched">
+              <span
+                *ngIf="
+                  loginForm.get('password')?.hasError('required') &&
+                  loginForm.get('password')?.touched
+                "
+              >
                 Password is required
               </span>
-              <span *ngIf="loginForm.get('password')?.hasError('pattern') && loginForm.get('password')?.touched">
-                Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character
+              <span
+                *ngIf="
+                  loginForm.get('password')?.hasError('pattern') &&
+                  loginForm.get('password')?.touched
+                "
+              >
+                Password must contain at least one uppercase letter, one lowercase letter, one
+                number, and one special character
               </span>
             </div>
-
           </div>
-          <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid" routerLink="/rooms">Login</button>
+          <button type="submit" class="btn btn-primary"  (click)="onSubmit()">
+            Login
+          </button>
         </form>
       </div>
     </div>
