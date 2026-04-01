@@ -22,7 +22,10 @@
         </li>
       </ul>
       <ul class="navbar-nav d-flex justify-content-end align-items-lg-end me-3"*ngIf="isLoggedIn">
-        <mat-icon class="mx-1 bg-danger text-light rounded-circle text-center fs-5">person</mat-icon>
+        <!-- <mat-icon class="mx-1 bg-danger text-light rounded-circle text-center fs-5">person</mat-icon> -->
+        <video width="40" height="40" class="mx-1 rounded-circle text-center fs-5" autoplay muted loop>
+          <source src="/background/profile.mp4" type="video/mp4">
+        </video>
         <a>{{ userName }}</a>
       </ul>
       <ul class="navbar-nav d-flex justify-content-end align-items-lg-end">
